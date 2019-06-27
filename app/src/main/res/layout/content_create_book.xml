@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".book.CreateBook"
+    tools:showIn="@layout/activity_create_book">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <EditText android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Book Title"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@null"
+                android:layout_marginBottom="0dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"  />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <EditText android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Book Author"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@null"
+                android:layout_marginBottom="0dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"  />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <EditText android:id="@+id/publisher"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Book Publisher"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@null"
+                android:layout_marginBottom="0dp"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/black"  />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+
+            <Button android:id="@+id/save"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Save"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:background="@color/cardview_light_background" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
